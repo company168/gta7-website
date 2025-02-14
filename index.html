@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grand Theft Auto 7 - Viitorul Jocului</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Grand Theft Auto 7</h1>
+        <p>Explorând viitorul lumii GTA</p>
+    </header>
+
+    <section class="intro">
+        <h2>Un nou început în GTA 7</h2>
+        <p>Explorează o lume vastă, plină de noi tehnologii, orașe strălucitoare și posibilități nelimitate.</p>
+    </section>
+
+    <section class="features">
+        <div class="feature-box">
+            <h3>Tehnologie avansată</h3>
+            <p>GTA 7 va aduce o experiență imersivă cu grafica de ultimă generație, fizică revoluționară și AI complet regenerat.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Orașe futuriste</h3>
+            <p>Orașele vor fi mai mari și mai interactive ca niciodată, cu nenumărate locații de explorat.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Vehicule noi</h3>
+            <p>Vei putea conduce vehicule echipate cu tehnologie de vârf, de la drone la mașini zburătoare!</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 GTA7 | Toate drepturile rezervate</p>
+    </footer>
+</body>
+</html>
+/* Resetare stiluri implicite */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    line-height: 1.6;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-bottom: 2px solid #fff;
+}
+
+h1 {
+    font-size: 4em;
+    letter-spacing: 2px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+p {
+    font-size: 1.2em;
+    animation: fadeIn 3s ease-in-out;
+}
+
+/* Animație fade-in */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.intro {
+    text-align: center;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.feature-box {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+document.addEventListener('DOMContentLoaded', function () {
+    const header = document.querySelector('header h1');
+    header.addEventListener('mouseover', () => {
+        header.style.color = '#ff6347';
+    });
+    header.addEventListener('mouseout', () => {
+        header.style.color = 'white';
+    });
+});
+document.addEventListener('DOMContentLoaded', function () {
+    const header = document.querySelector('header h1');
+    header.addEventListener('mouseover', () => {
+        header.style.color = '#ff6347';
+    });
+    header.addEventListener('mouseout', () => {
+        header.style.color = 'white';
+    });
+});
